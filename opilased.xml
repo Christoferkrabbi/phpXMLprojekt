@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<opilased>
+    <opilane>
+        <nimi>Juku</nimi>
+        <isikukood>1234567</isikukood>
+        <eriala>Tarvara arendaja</eriala>
+        <elukoht>
+            <linn>Tallinn</linn>
+            <maakond>Harjumaa</maakond>
+        </elukoht>
+    </opilane>
+    <opilane>
+        <nimi>Joonas</nimi>
+        <isikukood>43545456</isikukood>
+        <eriala>Tarvara arendaja</eriala>
+        <elukoht>
+            <linn>Tallinn</linn>
+            <maakond>Harjumaa</maakond>
+        </elukoht>
+    </opilane>
+    <opilane>
+        <nimi>Tom</nimi>
+        <isikukood>342576</isikukood>
+        <eriala>Automaaler</eriala>
+        <elukoht>
+            <linn>Tallinn</linn>
+            <maakond>Harjumaa</maakond>
+        </elukoht>
+    </opilane>
+    <opilane>
+        <nimi>Bobby</nimi>
+        <isikukood>1234567</isikukood>
+        <eriala>Juuksur</eriala>
+            <elukoht>
+                <linn>Tartu</linn>
+                <maakond>Tartumaa</maakond>
+            </elukoht>
+        </opilane>
+        <opilane>
+            <nimi>Billy</nimi>
+            <isikukood>1234567</isikukood>
+            <eriala>Gamer</eriala>
+            <elukoht>
+                <linn>pärapõrgu</linn>
+                <maakond>Põrgu</maakond>
+            </elukoht>
+        </opilane>
+</opilased>
