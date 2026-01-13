@@ -12,10 +12,26 @@ $opilased=simplexml_load_file("opilased.xml");
 <?php
 //õilase nimi
 echo "1. õpilase nimi: ".$opilased->opilane[0]->nimi;
-echo "2. õpilase nimi: ".$opilased->opilane[1]->nimi;
-echo "3. õpilase nimi: ".$opilased->opilane[2]->nimi;
-echo "4. õpilase nimi: ".$opilased->opilane[3]->nimi;
-echo "5. õpilase nimi: ".$opilased->opilane[4]->nimi;
+//kõik õpilased
 ?>
+<table>
+    <tr>
+        <th>Õpilase nimi</th>
+        <th>Isikukood</th>
+        <th>Eriala</th>
+        <th>Elukoht</th>
+    </tr>
+    <?php
+    foreach($opilased->opilane as $opilane){
+        echo "<tr>";
+        echo "<td>".$opilane->nimi."</td>";
+        echo "<td>".$opilane->isikukood."</td>";
+        echo "<td>".$opilane->eriala."</td>";
+        echo "<td>".$opilane->elukoht->linn."
+<".$opilane-> elukoht->maakond."</td>";
+        echo "</tr>";
+    }
+    ?>
+</table>
 </body>
 </html>
