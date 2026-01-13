@@ -3,7 +3,7 @@
     <opilane>
         <nimi>Juku</nimi>
         <isikukood>1234567</isikukood>
-        <eriala>Tarvara arendaja</eriala>
+        <eriala>Tarkvara arendaja</eriala>
         <elukoht>
             <linn>Tallinn</linn>
             <maakond>Harjumaa</maakond>
@@ -12,7 +12,7 @@
     <opilane>
         <nimi>Joonas</nimi>
         <isikukood>43545456</isikukood>
-        <eriala>Tarvara arendaja</eriala>
+        <eriala>Tarkvara arendaja</eriala>
         <elukoht>
             <linn>Tallinn</linn>
             <maakond>Harjumaa</maakond>
