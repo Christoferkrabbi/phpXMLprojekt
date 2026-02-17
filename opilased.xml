@@ -1,48 +1,118 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <opilased>
-    <opilane>
-        <nimi>Juku</nimi>
-        <isikukood>1234567</isikukood>
-        <eriala>Tarkvara arendaja</eriala>
-        <elukoht>
-            <linn>Tallinn</linn>
-            <maakond>Harjumaa</maakond>
-        </elukoht>
-    </opilane>
-    <opilane>
-        <nimi>Joonas</nimi>
-        <isikukood>43545456</isikukood>
-        <eriala>Tarkvara arendaja</eriala>
-        <elukoht>
-            <linn>Tallinn</linn>
-            <maakond>Harjumaa</maakond>
-        </elukoht>
-    </opilane>
-    <opilane>
-        <nimi>Tom</nimi>
-        <isikukood>342576</isikukood>
-        <eriala>Automaaler</eriala>
-        <elukoht>
-            <linn>Tallinn</linn>
-            <maakond>Harjumaa</maakond>
-        </elukoht>
-    </opilane>
-    <opilane>
-        <nimi>Bobby</nimi>
-        <isikukood>1234567</isikukood>
-        <eriala>Juuksur</eriala>
-            <elukoht>
-                <linn>Tartu</linn>
-                <maakond>Tartumaa</maakond>
-            </elukoht>
-        </opilane>
-        <opilane>
-            <nimi>Billy</nimi>
-            <isikukood>1234567</isikukood>
-            <eriala>Gamer</eriala>
-            <elukoht>
-                <linn>pärapõrgu</linn>
-                <maakond>Põrgu</maakond>
-            </elukoht>
-        </opilane>
+
+  <opilane>
+    <nimi>Mart Mets</nimi>
+    <isikukood>12345678901</isikukood>
+    <eriala>IT</eriala>
+    <pilt>mart.jpg</pilt>
+    <elukoht>
+      <linn>Tallinn</linn>
+      <maakond>Harjumaa</maakond>
+    </elukoht>
+    <aine>
+      <nimetus>Matemaatika</nimetus>
+      <hinne>5</hinne>
+    </aine>
+    <aine>
+      <nimetus>Programmeerimine</nimetus>
+      <hinne>4</hinne>
+    </aine>
+  </opilane>
+
+  <opilane>
+    <nimi>Juku</nimi>
+    <isikukood>1234567</isikukood>
+    <eriala>Tarkvara arendaja</eriala>
+    <pilt>juku.jpg</pilt>
+    <elukoht>
+      <linn>Tallinn</linn>
+      <maakond>Harjumaa</maakond>
+    </elukoht>
+    <aine>
+      <nimetus>Andmebaasid</nimetus>
+      <hinne>3</hinne>
+    </aine>
+    <aine>
+      <nimetus>Programmeerimine</nimetus>
+      <hinne>4</hinne>
+    </aine>
+  </opilane>
+
+  <opilane>
+    <nimi>Joonas</nimi>
+    <isikukood>43545456</isikukood>
+    <eriala>Tarkvara arendaja</eriala>
+    <pilt>joonas.jpg</pilt>
+    <elukoht>
+      <linn>Tallinn</linn>
+      <maakond>Harjumaa</maakond>
+    </elukoht>
+    <aine>
+      <nimetus>Veebiarendus</nimetus>
+      <hinne>5</hinne>
+    </aine>
+    <aine>
+      <nimetus>Matemaatika</nimetus>
+      <hinne>4</hinne>
+    </aine>
+  </opilane>
+
+  <opilane>
+    <nimi>Tom</nimi>
+    <isikukood>342576</isikukood>
+    <eriala>Automaaler</eriala>
+    <pilt>tom.jpg</pilt>
+    <elukoht>
+      <linn>Tallinn</linn>
+      <maakond>Harjumaa</maakond>
+    </elukoht>
+    <aine>
+      <nimetus>Värviteooria</nimetus>
+      <hinne>4</hinne>
+    </aine>
+    <aine>
+      <nimetus>Tööohutus</nimetus>
+      <hinne>5</hinne>
+    </aine>
+  </opilane>
+
+  <opilane>
+    <nimi>Bobby</nimi>
+    <isikukood>1234567</isikukood>
+    <eriala>Juuksur</eriala>
+    <pilt>bobby.jpg</pilt>
+    <elukoht>
+      <linn>Tartu</linn>
+      <maakond>Tartumaa</maakond>
+    </elukoht>
+    <aine>
+      <nimetus>Soengud</nimetus>
+      <hinne>5</hinne>
+    </aine>
+    <aine>
+      <nimetus>Klienditeenindus</nimetus>
+      <hinne>4</hinne>
+    </aine>
+  </opilane>
+
+  <opilane>
+    <nimi>Billy</nimi>
+    <isikukood>1234567</isikukood>
+    <eriala>Gamer</eriala>
+    <pilt>billy.jpg</pilt>
+    <elukoht>
+      <linn>Pärapõrgu</linn>
+      <maakond>Põrgu</maakond>
+    </elukoht>
+    <aine>
+      <nimetus>Strateegia</nimetus>
+      <hinne>5</hinne>
+    </aine>
+    <aine>
+      <nimetus>Meeskonnatöö</nimetus>
+      <hinne>3</hinne>
+    </aine>
+  </opilane>
+
 </opilased>

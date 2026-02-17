@@ -7,14 +7,13 @@ require ('funktsioonid.php');
     <title>XML faili kuvamine funktsioonide abil</title>
 </head>
 <body>
-<h1>XML faili kuvamine - opilased.xml</h1>
+<h1>RSS uudised</h1>
 <?php
-uudised('https://ww.err.ee/rss', 5)
+uudised('https://www.err.ee/rss', 5)
 ?>
-
-<h1>postimees RSS</h1>
+<h1>Postimees RSS uudised</h1>
 <?php
-uudised('https://ww.postimees.ee/rss', 5)
+uudised('http://www.postimees.ee/rss', 3)
 ?>
 </body>
 </html>
