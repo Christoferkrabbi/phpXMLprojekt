@@ -1,11 +1,6 @@
 <?php
 
-/* ---------------- XML LOAD ---------------- */
-
 $opilased = simplexml_load_file("opilased.xml");
-
-
-/* ---------------- ADD STUDENT ---------------- */
 
 function LisaOpilane()
 {
@@ -31,19 +26,16 @@ function LisaOpilane()
             $xmlDoc->createElement("pilt", $failinimi)
     );
 
-    // elukoht
     $elukoht = $xmlDoc->createElement("elukoht");
     $elukoht->appendChild($xmlDoc->createElement("linn", $_POST["linn"]));
     $elukoht->appendChild($xmlDoc->createElement("maakond", $_POST["maakond"]));
     $xmlOpilane->appendChild($elukoht);
 
-    // aine 1
     $aine1 = $xmlDoc->createElement("aine");
     $aine1->appendChild($xmlDoc->createElement("nimetus", $_POST["aine1"]));
     $aine1->appendChild($xmlDoc->createElement("hinne", $_POST["hinne1"]));
     $xmlOpilane->appendChild($aine1);
 
-    // aine 2
     $aine2 = $xmlDoc->createElement("aine");
     $aine2->appendChild($xmlDoc->createElement("nimetus", $_POST["aine2"]));
     $aine2->appendChild($xmlDoc->createElement("hinne", $_POST["hinne2"]));
@@ -51,9 +43,6 @@ function LisaOpilane()
 
     $xmlDoc->save("opilased.xml");
 }
-
-
-/* ---------------- SEARCH ---------------- */
 
 function erialaOtsing($paring){
     global $opilased;
@@ -71,7 +60,6 @@ function erialaOtsing($paring){
             }
         }
 
-        // search subjects
         foreach($opilane->aine as $aine){
             if(stripos($aine->nimetus, $paring) === 0){
                 if(!in_array($opilane, $tulemus)){
@@ -84,9 +72,6 @@ function erialaOtsing($paring){
     return $tulemus;
 }
 
-
-/* ---------------- AVERAGE GRADE ---------------- */
-
 function keskmineHinne($opilane){
     $sum = 0;
     $count = 0;
@@ -98,9 +83,6 @@ function keskmineHinne($opilane){
 
     return $count > 0 ? round($sum/$count,2) : 0;
 }
-
-
-/* ---------------- FORM SUBMIT ---------------- */
 
 if(isset($_POST["submit"])){
     LisaOpilane();
@@ -130,8 +112,6 @@ if(isset($_POST["submit"])){
 
 <?php
 
-/* ---------------- DISPLAY STUDENTS ---------------- */
-
 if(!empty($_POST["otsing"])){
     $students = erialaOtsing($_POST["otsing"]);
 }
@@ -139,7 +119,7 @@ else{
     $students = $opilased->opilane;
 }
 
-echo "<table border='1'>
+echo "<table>
 <tr>
 <th>Nimi</th>
 <th>Isikukood</th>
@@ -160,17 +140,14 @@ foreach($students as $opilane){
 
     echo "<td>".$opilane->elukoht->linn.", ".$opilane->elukoht->maakond."</td>";
 
-    // picture
     echo "<td><img src='pildid/$opilane->pilt' width='80'></td>";
 
-    // subjects
     echo "<td>";
     foreach($opilane->aine as $aine){
         echo $aine->nimetus." - ".$aine->hinne."<br>";
     }
     echo "</td>";
 
-    // average
     echo "<td>".keskmineHinne($opilane)."</td>";
 
     echo "</tr>";
@@ -179,7 +156,6 @@ foreach($students as $opilane){
 echo "</table>";
 
 ?>
-
 
 <h2>Lisa uus õpilane</h2>
 
